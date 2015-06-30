@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "动易工具",
+    "version": "1.0",
+    "description": "work in powereasy",
+    "icons": {
+        "16": "images/iconfont-bianmingongjusolid-16.png",
+        "48": "images/iconfont-bianmingongjusolid-32.png",
+        "128": "images/iconfont-bianmingongjusolid-128.png"
+    },
+	"content_scripts":[
+		{
+			"matches":["http://com.powereasy.net/admin/Workflow/AddFlowActive.aspx?processId=*"],
+			"js":["js/jquery-1.11.1.min.js","js/crack.js"],
+             "all_frames": true
+		}
+	]
+    // "browser_action": {
+    //     "default_icon": {
+    //         "19": "images/iconfont-bianmingongjusolid-16.png",
+    //         "38": "images/iconfont-bianmingongjusolid-32.png"
+    //     },
+    //     "default_title": "动易开发工具集",
+    //     "default_popup": "popup.html"
+    // }
+}
